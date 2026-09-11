@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { content, telHref } from "@/lib/content";
+import { openEnquiryPopup } from "@/lib/enquiryPopup";
 
 export function Header() {
   const { images, school, contact } = content;
@@ -28,7 +31,14 @@ export function Header() {
             <PhoneIcon />
             {phone}
           </a>
-          <a href="#enquiry" className="btn-dark px-4 py-2.5 text-[13px] sm:px-5 sm:text-sm">
+          <a
+            href="#enquiry"
+            onClick={(e) => {
+              e.preventDefault();
+              openEnquiryPopup();
+            }}
+            className="btn-dark px-4 py-2.5 text-[13px] sm:px-5 sm:text-sm"
+          >
             Admission Enquiry
           </a>
         </div>

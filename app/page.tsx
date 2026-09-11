@@ -13,6 +13,7 @@ import { FinalCta } from "./components/FinalCta";
 import { Footer } from "./components/Footer";
 import { MobileBar } from "./components/MobileBar";
 import { EnquiryPopup } from "./components/EnquiryPopup";
+import { FloatingCta } from "./components/FloatingCta";
 import { content } from "@/lib/content";
 
 export default function Page() {
@@ -60,6 +61,7 @@ export default function Page() {
       </main>
       <Footer />
       <MobileBar />
+      <FloatingCta />
       <EnquiryPopup />
     </>
   );

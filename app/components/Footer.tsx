@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { content, telHref } from "@/lib/content";
 
 export function Footer() {
@@ -63,6 +64,7 @@ export function Footer() {
             <li><a href="#admissions" className="hover:text-brick">Admission process</a></li>
             <li><a href="#location" className="hover:text-brick">Location &amp; connectivity</a></li>
             <li><a href="#enquiry" className="hover:text-brick">Admission enquiry</a></li>
+            <li><Link href="/privacy-policy" className="hover:text-brick">Privacy policy</Link></li>
           </ul>
         </div>
 

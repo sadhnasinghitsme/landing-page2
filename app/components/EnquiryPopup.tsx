@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { content } from "@/lib/content";
+import { onOpenEnquiryPopup } from "@/lib/enquiryPopup";
 import { EnquiryForm } from "./EnquiryForm";
 
 const SEEN_KEY = "sks_popup_seen";
@@ -68,6 +69,16 @@ export function EnquiryPopup() {
     onScroll(); // in case the page is already past the halfway mark
 
     return teardown;
+  }, []);
+
+  /* --- also open on demand, e.g. the header's "Admission Enquiry" button --- */
+  useEffect(() => {
+    return onOpenEnquiryPopup(() => {
+      shownRef.current = true;
+      writeFlag(SEEN_KEY);
+      restoreFocusRef.current = document.activeElement as HTMLElement | null;
+      setOpen(true);
+    });
   }, []);
 
   /* --- while open: lock scroll, Escape to close, manage focus --- */
