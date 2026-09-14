@@ -36,8 +36,6 @@ const PAGES = {
   values: `${BASE}/core-value/`,
 };
 
-const INFRA = `${BASE}/wp-content/uploads/2025/10`;
-
 const IMAGES = [
   [`${BASE}/wp-content/uploads/2024/09/Logo.png`, "images/logo.png"],
   [`${BASE}/wp-content/uploads/2024/09/cropped-Logo-270x270.png`, "images/logo-mark.png"],
@@ -47,22 +45,17 @@ const IMAGES = [
   [`${BASE}/wp-content/uploads/2025/10/4th-Bannersed-Edit-copy.jpg`, "images/banner-3.jpg"],
   [`${BASE}/wp-content/uploads/2025/10/5th-banner-copy.jpg`, "images/banner-4.jpg"],
   [`${BASE}/wp-content/uploads/2025/10/6th-banner.jpg`, "images/banner-5.jpg"],
-  // (The homepage "Key Factors" icons are third-party brand logos — LEGO,
-  //  British Council, CBSE, etc. — so they are NOT re-hosted. The "Why SKS"
-  //  grid uses a neutral Lucide icon set instead, see app/components/WhySks.tsx.)
-  // "Our Programmes" + "Beyond Curriculum" photos — real shots from the
-  // Infrastructure page (/infrastructure/), 1200x600 each.
-  [`${INFRA}/Digital-classroom.jpg`, "images/programmes/academics.jpg"],
-  [`${INFRA}/Art-and-Craft-Room.jpg`, "images/programmes/co-curricular.jpg"],
-  [`${INFRA}/Football-Coaching-for-Students.jpg`, "images/programmes/physical-education.jpg"],
-  [`${INFRA}/COMPUTER-LAB.jpg`, "images/beyond/robotics.jpg"],
-  [`${INFRA}/Vocal-Instrumental-Music.jpg`, "images/beyond/dramm-jamm.jpg"],
-  [`${INFRA}/Self-Defense-Classes.jpg`, "images/beyond/self-defense.jpg"],
-  [`${INFRA}/Yoga-Room-and-Classes.jpg`, "images/beyond/yoga.jpg"],
-  // Section side photos (Infrastructure page): a wide campus-grounds shot for
-  // "About", a classroom shot for "Why SKS". Distinct from every other photo.
-  [`${INFRA}/Vast-Playground-and.jpg`, "images/about/campus-grounds.jpg"],
-  [`${INFRA}/Interactive-Class-Room.jpg`, "images/why/classroom.jpg"],
+  // (The homepage "Key Factors" section uses third-party brand marks — LEGO,
+  //  British Council, CBSE, etc. — so those originals are NOT re-hosted here.
+  //  The "Why SKS" grid instead uses site-owner-supplied illustrations checked
+  //  into public/images/*.png directly (see the `image` fields below and
+  //  app/components/WhySks.tsx) rather than pulling them from the live site.)
+  // "About", "Why SKS", all 3 "Our Programmes" photos, and all 4 "Beyond
+  // Curriculum" photos are site-owner-supplied assets checked into public/
+  // directly, not fetched from the live site — see `aboutPhoto` / `whyPhoto` /
+  // `programmes.items[].image` / `beyondCurriculum.items[].image`.
+  // Note: the About/Why ones are 359x269 Canva exports, lower-res than the rest of
+  // this page's photography, so they will look softer when enlarged.
 ];
 
 /* ------------------------------------------------------------------ helpers */
@@ -186,14 +179,14 @@ const FALLBACK = {
   },
   // `key` maps to a Lucide icon in app/components/WhySks.tsx.
   keyFactors: [
-    { key: "robotics", title: "Robotics Lab in association with LEGO" },
-    { key: "smartboard", title: "Interactive Classrooms with Smart Boards" },
-    { key: "transport", title: "Safe & Secure Transport" },
-    { key: "sms", title: "SMS Updates for Parents" },
-    { key: "documentary", title: "Movie / Documentary-based Education" },
-    { key: "award", title: "International School Award (British Council)" },
-    { key: "cbse", title: "Affiliated to CBSE, New Delhi" },
-    { key: "drama", title: "Dramm Jamm (Drama & JAM) Education" },
+    { key: "robotics", title: "Robotics Lab in association with LEGO", image: "/images/robotics-lab.png" },
+    { key: "smartboard", title: "Interactive Classrooms with Smart Boards", image: "/images/smart-board.png" },
+    { key: "transport", title: "Safe & Secure Transport", image: "/images/school-bus.png" },
+    { key: "sms", title: "SMS Updates for Parents", image: "/images/sms-updates.png" },
+    { key: "documentary", title: "Movie / Documentary-based Education", image: "/images/documentary.png" },
+    { key: "award", title: "International School Award (British Council)", image: "/images/school-award.png" },
+    { key: "cbse", title: "Affiliated to CBSE, New Delhi", image: "/images/cbse-logo.png" },
+    { key: "drama", title: "Dramm Jamm (Drama & JAM) Education", image: "/images/drama-jam.png" },
   ],
   admissions: {
     heading: "Admission Process",
@@ -261,19 +254,19 @@ const FALLBACK = {
     items: [
       {
         title: "Academics",
-        image: "/images/programmes/academics.jpg",
+        image: "/images/programmes/academics.webp",
         body:
           "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice.",
       },
       {
         title: "Co-curricular",
-        image: "/images/programmes/co-curricular.jpg",
+        image: "/images/programmes/co-curricular.webp",
         body:
           "Co-curricular activities develop the temperament of the child and bring out creativity, talent, leadership and character — built on the idea that every child has a personality.",
       },
       {
         title: "Physical Education",
-        image: "/images/programmes/physical-education.jpg",
+        image: "/images/programmes/physical-education.webp",
         body:
           "Physical Culture at SKS World School fosters sportsmanship, cooperation, team spirit and courage, with the emphasis on Sports for All — do your best, winning is not everything.",
       },
@@ -285,10 +278,10 @@ const FALLBACK = {
     heading: "Beyond Curriculum",
     eyebrow: "Beyond the classroom",
     items: [
-      { title: "Robotics Lab — in association with LEGO", image: "/images/beyond/robotics.jpg" },
-      { title: "Dramm Jamm — Drama, Vocal & Instrumental Music", image: "/images/beyond/dramm-jamm.jpg" },
-      { title: "Self-Defense Classes", image: "/images/beyond/self-defense.jpg" },
-      { title: "Yoga Room & Classes", image: "/images/beyond/yoga.jpg" },
+      { title: "Robotics Lab — in association with LEGO", image: "/images/beyond/robotics.webp" },
+      { title: "Dramm Jamm — Drama, Vocal & Instrumental Music", image: "/images/beyond/dramm-jamm.webp" },
+      { title: "Self-Defense Classes", image: "/images/beyond/self-defense.webp" },
+      { title: "Yoga Room & Classes", image: "/images/beyond/yoga.webp" },
     ],
   },
   contact: {
@@ -319,8 +312,8 @@ const FALLBACK = {
     // Hero backdrop — the school's own homepage banner (aerial campus shot with
     // the "SKS WORLD SCHOOL" signage). Source: /wp-content/uploads/2025/10/2nd-banner.jpg
     heroPhoto: "/images/banner-1.jpg",
-    aboutPhoto: "/images/about/campus-grounds.jpg",
-    whyPhoto: "/images/why/classroom.jpg",
+    aboutPhoto: "/images/about/campus-grounds.webp",
+    whyPhoto: "/images/why/classroom.webp",
     banners: [
       "/images/banner-1.jpg",
       "/images/banner-2.jpg",
@@ -588,7 +581,8 @@ async function scrape() {
     warn("curriculum", err);
   }
 
-  // --- infrastructure (photo source for Programmes / Beyond Curriculum) ---
+  // --- infrastructure (site reachability check; no photos are pulled from
+  // this page anymore — Programmes/Beyond Curriculum use site-owner assets) ---
   try {
     const { text } = await getText(PAGES.infrastructure);
     if (/infrastructure/i.test(text)) livePages++;

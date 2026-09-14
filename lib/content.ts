@@ -12,6 +12,7 @@ export interface Proximity {
 export interface KeyFactor {
   key: string;
   title: string;
+  image: string;
 }
 export interface AdmissionStep {
   title: string;

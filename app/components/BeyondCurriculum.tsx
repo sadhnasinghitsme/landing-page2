@@ -21,8 +21,8 @@ export function BeyondCurriculum() {
               <Image
                 src={it.image}
                 alt={it.title}
-                width={1200}
-                height={600}
+                width={600}
+                height={400}
                 sizes="(max-width: 640px) 50vw, 25vw"
                 className="aspect-[4/3] w-full object-cover"
               />
@@ -34,8 +34,7 @@ export function BeyondCurriculum() {
         </ul>
 
         <p className="mt-6 text-xs text-ink/45">
-          Activities from the school&rsquo;s Key Factors and Infrastructure pages;
-          photos re-hosted from sksworldschoolnoida.ac.in.
+          Activities from the school&rsquo;s Key Factors and Infrastructure pages.
         </p>
       </div>
     </section>
