@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T12:28:51.815Z",
+  "generatedAt": "2026-09-14T12:33:08.506Z",
   "source": {
     "home": "https://sksworldschoolnoida.ac.in/",
     "about": "https://sksworldschoolnoida.ac.in/about-sksws-noida/",
@@ -94,35 +94,43 @@
   "keyFactors": [
     {
       "key": "robotics",
-      "title": "Robotics Lab in association with LEGO"
+      "title": "Robotics Lab in association with LEGO",
+      "image": "/images/robotics-lab.png"
     },
     {
       "key": "smartboard",
-      "title": "Interactive Classrooms with Smart Boards"
+      "title": "Interactive Classrooms with Smart Boards",
+      "image": "/images/smart-board.png"
     },
     {
       "key": "transport",
-      "title": "Safe & Secure Transport"
+      "title": "Safe & Secure Transport",
+      "image": "/images/school-bus.png"
     },
     {
       "key": "sms",
-      "title": "SMS Updates for Parents"
+      "title": "SMS Updates for Parents",
+      "image": "/images/sms-updates.png"
     },
     {
       "key": "documentary",
-      "title": "Movie / Documentary-based Education"
+      "title": "Movie / Documentary-based Education",
+      "image": "/images/documentary.png"
     },
     {
       "key": "award",
-      "title": "International School Award (British Council)"
+      "title": "International School Award (British Council)",
+      "image": "/images/school-award.png"
     },
     {
       "key": "cbse",
-      "title": "Affiliated to CBSE, New Delhi"
+      "title": "Affiliated to CBSE, New Delhi",
+      "image": "/images/cbse-logo.png"
     },
     {
       "key": "drama",
-      "title": "Dramm Jamm (Drama & JAM) Education"
+      "title": "Dramm Jamm (Drama & JAM) Education",
+      "image": "/images/drama-jam.png"
     }
   ],
   "admissions": {
@@ -186,17 +194,17 @@
     "items": [
       {
         "title": "Academics",
-        "image": "/images/programmes/academics.jpg",
+        "image": "/images/programmes/academics.webp",
         "body": "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice."
       },
       {
         "title": "Co-curricular",
-        "image": "/images/programmes/co-curricular.jpg",
+        "image": "/images/programmes/co-curricular.webp",
         "body": "Co-curricular activities develop the temperament of the child and bring out creativity, talent, leadership and character — built on the idea that every child has a personality."
       },
       {
         "title": "Physical Education",
-        "image": "/images/programmes/physical-education.jpg",
+        "image": "/images/programmes/physical-education.webp",
         "body": "Physical Culture at SKS World School fosters sportsmanship, cooperation, team spirit and courage, with the emphasis on Sports for All — do your best, winning is not everything."
       }
     ]
@@ -207,19 +215,19 @@
     "items": [
       {
         "title": "Robotics Lab — in association with LEGO",
-        "image": "/images/beyond/robotics.jpg"
+        "image": "/images/beyond/robotics.webp"
       },
       {
         "title": "Dramm Jamm — Drama, Vocal & Instrumental Music",
-        "image": "/images/beyond/dramm-jamm.jpg"
+        "image": "/images/beyond/dramm-jamm.webp"
       },
       {
         "title": "Self-Defense Classes",
-        "image": "/images/beyond/self-defense.jpg"
+        "image": "/images/beyond/self-defense.webp"
       },
       {
         "title": "Yoga Room & Classes",
-        "image": "/images/beyond/yoga.jpg"
+        "image": "/images/beyond/yoga.webp"
       }
     ]
   },
@@ -235,7 +243,7 @@
       "Noida, Uttar Pradesh 201305"
     ],
     "officeHours": "Administration Office: 9:00 AM – 2:00 PM (working days)",
-    "mapsEmbed": "https://maps.google.com/maps?q=SKS%20World%20School%2C%20Sector%20137%20Noida%2C%20Uttar%20Pradesh%20201305&t=m&z=14&output=embed&iwloc=near",
+    "mapsEmbed": "https://maps.google.com/maps?q=SKS%20World%20School%2C%20Sector%20137%20Noida%20Plot%20No%20ss%2C%20Sector%20137%2C%20Noida%2C%20Uttar%20Pradesh%20201305&t=m&z=15&output=embed&iwloc=near",
     "mapsLink": "https://www.google.com/maps/search/?api=1&query=SKS+World+School+Sector+137+Noida"
   },
   "social": {
@@ -249,8 +257,8 @@
     "logoMark": "/images/logo-mark.png",
     "campus": "/images/campus.jpg",
     "heroPhoto": "/images/banner-1.jpg",
-    "aboutPhoto": "/images/about/campus-grounds.jpg",
-    "whyPhoto": "/images/why/classroom.jpg",
+    "aboutPhoto": "/images/about/about-campus.png",
+    "whyPhoto": "/images/why/classroom.webp",
     "banners": [
       "/images/banner-1.jpg",
       "/images/banner-2.jpg",
