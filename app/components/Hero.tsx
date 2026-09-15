@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { content } from "@/lib/content";
 import { EnquiryForm } from "./EnquiryForm";
+import { HeroCarousel } from "./HeroCarousel";
 
 export function Hero() {
   const { hero, images } = content;
@@ -8,23 +8,7 @@ export function Hero() {
 
   return (
     <section className="relative isolate bg-brick-700 lg:min-h-[600px]">
-      {/* full-bleed campus photo from sksworldschoolnoida.ac.in + navy overlay */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src={images.heroPhoto}
-          alt="SKS World School campus, Sector 137 Noida"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        {/* Overlay: darker on the left (behind the headline), fading lighter to
-            the right and toward the top so the campus photo stays visible.
-            A little extra weight at the bottom on small screens keeps the
-            stacked headline readable. */}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,31,58,0.80)_0%,rgba(11,31,58,0.58)_42%,rgba(11,31,58,0.30)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(11,31,58,0.40)_0%,rgba(11,31,58,0)_58%)] sm:bg-[linear-gradient(0deg,rgba(11,31,58,0.24)_0%,rgba(11,31,58,0)_52%)]" />
-      </div>
+      <HeroCarousel images={images.heroCarousel} />
 
       <div className="container-page grid items-center gap-10 pb-16 pt-14 sm:pt-16 lg:grid-cols-[1fr_minmax(350px,420px)] lg:gap-12 lg:pb-24 lg:pt-24">
         <div className="max-w-xl">

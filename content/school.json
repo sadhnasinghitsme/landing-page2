@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T12:33:08.506Z",
+  "generatedAt": "2026-09-15T07:00:09.443Z",
   "source": {
     "home": "https://sksworldschoolnoida.ac.in/",
     "about": "https://sksworldschoolnoida.ac.in/about-sksws-noida/",
@@ -194,17 +194,17 @@
     "items": [
       {
         "title": "Academics",
-        "image": "/images/programmes/academics.webp",
+        "image": "/images/programmes/academics.png",
         "body": "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice."
       },
       {
         "title": "Co-curricular",
-        "image": "/images/programmes/co-curricular.webp",
+        "image": "/images/programmes/co-curricular.png",
         "body": "Co-curricular activities develop the temperament of the child and bring out creativity, talent, leadership and character — built on the idea that every child has a personality."
       },
       {
         "title": "Physical Education",
-        "image": "/images/programmes/physical-education.webp",
+        "image": "/images/programmes/physical-education.png",
         "body": "Physical Culture at SKS World School fosters sportsmanship, cooperation, team spirit and courage, with the emphasis on Sports for All — do your best, winning is not everything."
       }
     ]
@@ -257,8 +257,15 @@
     "logoMark": "/images/logo-mark.png",
     "campus": "/images/campus.jpg",
     "heroPhoto": "/images/banner-1.jpg",
+    "heroCarousel": [
+      "/images/hero/slide-1.png",
+      "/images/hero/slide-2.png",
+      "/images/hero/slide-3.png",
+      "/images/hero/slide-4.png",
+      "/images/hero/slide-5.png"
+    ],
     "aboutPhoto": "/images/about/about-campus.png",
-    "whyPhoto": "/images/why/classroom.webp",
+    "whyPhoto": "/images/why/classroom.png",
     "banners": [
       "/images/banner-1.jpg",
       "/images/banner-2.jpg",

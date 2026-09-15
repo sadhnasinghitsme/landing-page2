@@ -22,8 +22,8 @@ export function WhySks() {
           <Image
             src={images.whyPhoto}
             alt="Students attending a smartboard lesson in an SKS World School classroom"
-            width={359}
-            height={269}
+            width={1448}
+            height={1086}
             sizes="(max-width: 1024px) 100vw, 40vw"
             className="aspect-[4/3] w-full object-cover"
           />

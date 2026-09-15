@@ -127,6 +127,7 @@ export interface SchoolContent {
     logoMark: string;
     campus: string;
     heroPhoto: string;
+    heroCarousel: string[];
     aboutPhoto: string;
     whyPhoto: string;
     banners: string[];

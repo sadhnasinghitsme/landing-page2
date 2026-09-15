@@ -50,12 +50,11 @@ const IMAGES = [
   //  The "Why SKS" grid instead uses site-owner-supplied illustrations checked
   //  into public/images/*.png directly (see the `image` fields below and
   //  app/components/WhySks.tsx) rather than pulling them from the live site.)
-  // "About", "Why SKS", all 3 "Our Programmes" photos, and all 4 "Beyond
-  // Curriculum" photos are site-owner-supplied assets checked into public/
-  // directly, not fetched from the live site — see `aboutPhoto` / `whyPhoto` /
-  // `programmes.items[].image` / `beyondCurriculum.items[].image`.
-  // Note: the About/Why ones are 359x269 Canva exports, lower-res than the rest of
-  // this page's photography, so they will look softer when enlarged.
+  // "About", "Why SKS", all 3 "Our Programmes" photos, all 4 "Beyond
+  // Curriculum" photos, and the 5 hero carousel slides are site-owner-supplied
+  // assets checked into public/ directly, not fetched from the live site —
+  // see `aboutPhoto` / `whyPhoto` / `programmes.items[].image` /
+  // `beyondCurriculum.items[].image` / `heroCarousel`.
 ];
 
 /* ------------------------------------------------------------------ helpers */
@@ -254,19 +253,19 @@ const FALLBACK = {
     items: [
       {
         title: "Academics",
-        image: "/images/programmes/academics.webp",
+        image: "/images/programmes/academics.png",
         body:
           "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice.",
       },
       {
         title: "Co-curricular",
-        image: "/images/programmes/co-curricular.webp",
+        image: "/images/programmes/co-curricular.png",
         body:
           "Co-curricular activities develop the temperament of the child and bring out creativity, talent, leadership and character — built on the idea that every child has a personality.",
       },
       {
         title: "Physical Education",
-        image: "/images/programmes/physical-education.webp",
+        image: "/images/programmes/physical-education.png",
         body:
           "Physical Culture at SKS World School fosters sportsmanship, cooperation, team spirit and courage, with the emphasis on Sports for All — do your best, winning is not everything.",
       },
@@ -312,8 +311,17 @@ const FALLBACK = {
     // Hero backdrop — the school's own homepage banner (aerial campus shot with
     // the "SKS WORLD SCHOOL" signage). Source: /wp-content/uploads/2025/10/2nd-banner.jpg
     heroPhoto: "/images/banner-1.jpg",
-    aboutPhoto: "/images/about/campus-grounds.webp",
-    whyPhoto: "/images/why/classroom.webp",
+    // Auto-rotating hero background — site-owner-supplied photos (real SKS
+    // campus/classroom shots), checked into public/images/hero/ directly.
+    heroCarousel: [
+      "/images/hero/slide-1.png",
+      "/images/hero/slide-2.png",
+      "/images/hero/slide-3.png",
+      "/images/hero/slide-4.png",
+      "/images/hero/slide-5.png",
+    ],
+    aboutPhoto: "/images/about/about-campus.png",
+    whyPhoto: "/images/why/classroom.png",
     banners: [
       "/images/banner-1.jpg",
       "/images/banner-2.jpg",

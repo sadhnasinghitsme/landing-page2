@@ -22,8 +22,8 @@ export function Programmes() {
               <Image
                 src={p.image}
                 alt={p.title}
-                width={600}
-                height={400}
+                width={1448}
+                height={1086}
                 sizes="(max-width: 640px) 100vw, 33vw"
                 className="h-44 w-full object-cover"
               />

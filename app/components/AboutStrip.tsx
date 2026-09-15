@@ -49,9 +49,9 @@ export function AboutStrip() {
           <div className="overflow-hidden rounded-2xl border border-ink/10 shadow-card">
             <Image
               src={images.aboutPhoto}
-              alt="SKS World School campus grounds, Sector 137 Noida"
-              width={359}
-              height={269}
+              alt="SKS World School campus building, Sector 137 Noida"
+              width={1448}
+              height={1086}
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="aspect-[4/3] w-full object-cover"
             />
