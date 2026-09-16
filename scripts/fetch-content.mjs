@@ -309,7 +309,9 @@ const FALLBACK = {
   images: {
     logo: "/images/logo.png",
     logoMark: "/images/logo-mark.png",
-    campus: "/images/campus.jpg",
+    // Location section photo — site-owner-supplied school bus photo (was a
+    // black-and-white stock bus image), checked into public/images/why/.
+    campus: "/images/why/transport-bus.png",
     // Hero backdrop — the school's own homepage banner (aerial campus shot with
     // the "SKS WORLD SCHOOL" signage). Source: /wp-content/uploads/2025/10/2nd-banner.jpg
     heroPhoto: "/images/banner-1.jpg",
