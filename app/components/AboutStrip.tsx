@@ -16,7 +16,7 @@ export function AboutStrip() {
 
   return (
     <section id="about" className="bg-paper">
-      <div className="container-page pb-14 pt-16 lg:pb-16 lg:pt-36">
+      <div className="container-page py-16 sm:py-20">
         {/* 1 — About SKS World School */}
         <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-start lg:gap-12">
           <div>

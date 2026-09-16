@@ -34,18 +34,19 @@ export function WhySks() {
         {keyFactors.map((f) => (
           <li
             key={f.title}
-            className="flex flex-col gap-3 rounded-xl border border-ink/10 bg-white p-5 shadow-sm"
+            className="overflow-hidden rounded-xl border border-ink/10 bg-white shadow-sm"
           >
-            <span className="flex h-16 w-16 items-center justify-center">
-              <Image
-                src={f.image}
-                alt=""
-                width={96}
-                height={96}
-                className="h-14 w-14 object-contain"
-              />
-            </span>
-            <span className="text-sm font-semibold leading-snug text-ink">{f.title}</span>
+            <Image
+              src={f.image}
+              alt={f.title}
+              width={600}
+              height={450}
+              sizes="(max-width: 640px) 50vw, 25vw"
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <p className="px-4 py-4 text-sm font-semibold leading-snug text-ink">
+              {f.title}
+            </p>
           </li>
         ))}
       </ul>

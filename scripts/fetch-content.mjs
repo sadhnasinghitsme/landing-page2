@@ -47,9 +47,11 @@ const IMAGES = [
   [`${BASE}/wp-content/uploads/2025/10/6th-banner.jpg`, "images/banner-5.jpg"],
   // (The homepage "Key Factors" section uses third-party brand marks — LEGO,
   //  British Council, CBSE, etc. — so those originals are NOT re-hosted here.
-  //  The "Why SKS" grid instead uses site-owner-supplied illustrations checked
-  //  into public/images/*.png directly (see the `image` fields below and
-  //  app/components/WhySks.tsx) rather than pulling them from the live site.)
+  //  The "Why SKS" grid instead uses site-owner-supplied photos checked into
+  //  public/images/why/*.png directly (see the `image` fields below and
+  //  app/components/WhySks.tsx) rather than pulling them from the live site.
+  //  "Dramm Jamm" reuses the auditorium photo — the venue drama performances
+  //  actually happen in — since no dedicated drama/JAM photo exists yet.)
   // "About", "Why SKS", all 3 "Our Programmes" photos, all 4 "Beyond
   // Curriculum" photos, and the 5 hero carousel slides are site-owner-supplied
   // assets checked into public/ directly, not fetched from the live site —
@@ -178,14 +180,14 @@ const FALLBACK = {
   },
   // `key` maps to a Lucide icon in app/components/WhySks.tsx.
   keyFactors: [
-    { key: "robotics", title: "Robotics Lab in association with LEGO", image: "/images/robotics-lab.png" },
-    { key: "smartboard", title: "Interactive Classrooms with Smart Boards", image: "/images/smart-board.png" },
-    { key: "transport", title: "Safe & Secure Transport", image: "/images/school-bus.png" },
-    { key: "sms", title: "SMS Updates for Parents", image: "/images/sms-updates.png" },
-    { key: "documentary", title: "Movie / Documentary-based Education", image: "/images/documentary.png" },
-    { key: "award", title: "International School Award (British Council)", image: "/images/school-award.png" },
-    { key: "cbse", title: "Affiliated to CBSE, New Delhi", image: "/images/cbse-logo.png" },
-    { key: "drama", title: "Dramm Jamm (Drama & JAM) Education", image: "/images/drama-jam.png" },
+    { key: "robotics", title: "Robotics Lab in association with LEGO", image: "/images/why/robotics-lab.png" },
+    { key: "smartboard", title: "Interactive Classrooms with Smart Boards", image: "/images/why/smart-classroom.png" },
+    { key: "transport", title: "Safe & Secure Transport", image: "/images/why/transport-bus.png" },
+    { key: "sms", title: "SMS Updates for Parents", image: "/images/why/parent-sms.png" },
+    { key: "documentary", title: "Movie / Documentary-based Education", image: "/images/why/auditorium.png" },
+    { key: "award", title: "International School Award (British Council)", image: "/images/why/award-trophy.png" },
+    { key: "cbse", title: "Affiliated to CBSE, New Delhi", image: "/images/why/cbse-emblem.png" },
+    { key: "drama", title: "Dramm Jamm (Drama & JAM) Education", image: "/images/why/auditorium.png" },
   ],
   admissions: {
     heading: "Admission Process",

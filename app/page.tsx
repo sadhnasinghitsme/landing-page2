@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { Gallery } from "./components/Gallery";
 import { AboutStrip } from "./components/AboutStrip";
 import { WhySks } from "./components/WhySks";
 import { Programmes } from "./components/Programmes";
@@ -13,7 +14,7 @@ import { FinalCta } from "./components/FinalCta";
 import { Footer } from "./components/Footer";
 import { MobileBar } from "./components/MobileBar";
 import { EnquiryPopup } from "./components/EnquiryPopup";
-import { FloatingCta } from "./components/FloatingCta";
+import { FloatingButtons } from "./components/FloatingButtons";
 import { content } from "@/lib/content";
 
 export default function Page() {
@@ -48,6 +49,7 @@ export default function Page() {
       <Header />
       <main className="pb-16 md:pb-0">
         <Hero />
+        <Gallery />
         <AboutStrip />
         <WhySks />
         <Programmes />
@@ -61,7 +63,7 @@ export default function Page() {
       </main>
       <Footer />
       <MobileBar />
-      <FloatingCta />
+      <FloatingButtons />
       <EnquiryPopup />
     </>
   );

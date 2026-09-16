@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T07:00:09.443Z",
+  "generatedAt": "2026-09-16T05:18:18.010Z",
   "source": {
     "home": "https://sksworldschoolnoida.ac.in/",
     "about": "https://sksworldschoolnoida.ac.in/about-sksws-noida/",
@@ -95,42 +95,42 @@
     {
       "key": "robotics",
       "title": "Robotics Lab in association with LEGO",
-      "image": "/images/robotics-lab.png"
+      "image": "/images/why/robotics-lab.png"
     },
     {
       "key": "smartboard",
       "title": "Interactive Classrooms with Smart Boards",
-      "image": "/images/smart-board.png"
+      "image": "/images/why/smart-classroom.png"
     },
     {
       "key": "transport",
       "title": "Safe & Secure Transport",
-      "image": "/images/school-bus.png"
+      "image": "/images/why/transport-bus.png"
     },
     {
       "key": "sms",
       "title": "SMS Updates for Parents",
-      "image": "/images/sms-updates.png"
+      "image": "/images/why/parent-sms.png"
     },
     {
       "key": "documentary",
       "title": "Movie / Documentary-based Education",
-      "image": "/images/documentary.png"
+      "image": "/images/why/auditorium.png"
     },
     {
       "key": "award",
       "title": "International School Award (British Council)",
-      "image": "/images/school-award.png"
+      "image": "/images/why/award-trophy.png"
     },
     {
       "key": "cbse",
       "title": "Affiliated to CBSE, New Delhi",
-      "image": "/images/cbse-logo.png"
+      "image": "/images/why/cbse-emblem.png"
     },
     {
       "key": "drama",
       "title": "Dramm Jamm (Drama & JAM) Education",
-      "image": "/images/drama-jam.png"
+      "image": "/images/why/auditorium.png"
     }
   ],
   "admissions": {

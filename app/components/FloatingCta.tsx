@@ -8,7 +8,7 @@ export function FloatingCta() {
       type="button"
       onClick={openEnquiryPopup}
       aria-label="Admission Enquiry"
-      className="fixed bottom-20 right-4 z-40 flex items-center gap-2 rounded-full bg-brick px-4 py-3.5 text-sm font-semibold text-white shadow-lift transition hover:-translate-y-0.5 hover:bg-brick-600 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-flame md:bottom-7 md:right-7 md:px-5"
+      className="flex items-center gap-2 rounded-full bg-brick px-4 py-3.5 text-sm font-semibold text-white shadow-lift transition hover:-translate-y-0.5 hover:bg-brick-600 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-flame md:px-5"
     >
       <ChatIcon />
       <span className="hidden md:inline">Admission Enquiry</span>

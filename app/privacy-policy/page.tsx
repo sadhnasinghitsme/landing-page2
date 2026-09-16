@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { EnquiryPopup } from "../components/EnquiryPopup";
-import { FloatingCta } from "../components/FloatingCta";
+import { FloatingButtons } from "../components/FloatingButtons";
 import { content } from "@/lib/content";
 
 const { school } = content;
@@ -127,7 +127,7 @@ export default function PrivacyPolicyPage() {
         </section>
       </main>
       <Footer />
-      <FloatingCta />
+      <FloatingButtons />
       <EnquiryPopup />
     </>
   );
