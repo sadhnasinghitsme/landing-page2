@@ -1,4 +1,7 @@
+"use client";
+
 import { content, telHref } from "@/lib/content";
+import { openEnquiryPopup } from "@/lib/enquiryPopup";
 
 export function MobileBar() {
   const phone = content.contact.phones[0];
@@ -8,7 +11,14 @@ export function MobileBar() {
         <a href={telHref(phone)} className="btn-ghost">
           Call {phone}
         </a>
-        <a href="#enquiry" className="btn-primary">
+        <a
+          href="#enquiry"
+          onClick={(e) => {
+            e.preventDefault();
+            openEnquiryPopup();
+          }}
+          className="btn-primary"
+        >
           Enquire Now
         </a>
       </div>

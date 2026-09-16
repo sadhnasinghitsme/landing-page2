@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { content } from "@/lib/content";
 import { onOpenEnquiryPopup } from "@/lib/enquiryPopup";
 import { EnquiryForm } from "./EnquiryForm";
@@ -27,9 +28,17 @@ const writeFlag = (k: string) => {
 
 export function EnquiryPopup() {
   const [open, setOpen] = useState(false);
+  // Portal target isn't available during SSR / the first client render, so
+  // gate on mount before ever calling createPortal(document.body).
+  const [mounted, setMounted] = useState(false);
   const shownRef = useRef(false);
   const closeRef = useRef<HTMLButtonElement>(null);
   const restoreFocusRef = useRef<HTMLElement | null>(null);
+  const scrollYRef = useRef(0);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const dismiss = useCallback(() => setOpen(false), []);
 
@@ -85,8 +94,27 @@ export function EnquiryPopup() {
   useEffect(() => {
     if (!open) return;
 
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    // Plain `overflow: hidden` on <body> isn't enough on mobile Safari: if the
+    // popup opens while the page is already scrolled (exactly the 50%-scroll
+    // auto-trigger case), a `position: fixed` overlay can render pinned to the
+    // *document's* top instead of the visible viewport, and the background
+    // still rubber-band-scrolls under the finger. Pinning <body> itself at a
+    // negative offset equal to the current scroll position is the standard,
+    // robust fix — the popup keeps its own `fixed` positioning and stays
+    // centered in the real viewport regardless.
+    const scrollY = window.scrollY;
+    scrollYRef.current = scrollY;
+    const body = document.body.style;
+    const prev = {
+      position: body.position,
+      top: body.top,
+      width: body.width,
+      overflow: body.overflow,
+    };
+    body.position = "fixed";
+    body.top = `-${scrollY}px`;
+    body.width = "100%";
+    body.overflow = "hidden";
 
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
@@ -95,27 +123,39 @@ export function EnquiryPopup() {
     closeRef.current?.focus();
 
     return () => {
-      document.body.style.overflow = prevOverflow;
+      body.position = prev.position;
+      body.top = prev.top;
+      body.width = prev.width;
+      body.overflow = prev.overflow;
+      window.scrollTo(0, scrollYRef.current);
       document.removeEventListener("keydown", onKey);
       restoreFocusRef.current?.focus?.();
     };
   }, [open]);
 
-  if (!open) return null;
+  if (!open || !mounted) return null;
 
-  return (
+  // Rendered via a portal straight onto <body> — fixed inset-0 already made
+  // it visually escape any ancestor, but a portal also sidesteps the whole
+  // class of "an ancestor gained a transform/filter and now traps position:
+  // fixed inside its bounds" bugs, and guarantees it always paints above
+  // everything else regardless of where in the tree <EnquiryPopup /> is used.
+  return createPortal(
+    // The overlay must NOT have overflow-y-auto — on iOS Safari a fixed element
+    // with overflow scroll can be clipped / displaced after the page has scrolled.
+    // Instead we use a flex centering wrapper and let the card itself scroll.
     <div
-      className="fixed inset-0 z-[100] overflow-y-auto bg-ink/60 backdrop-blur-sm"
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-ink/60 backdrop-blur-sm"
       role="dialog"
       aria-modal="true"
       aria-labelledby="enquiry-popup-title"
       onClick={dismiss}
     >
-      <div className="flex min-h-full items-center justify-center p-4">
-        <div
-          className="animate-fade-up relative w-full max-w-lg rounded-2xl bg-white p-6 shadow-lift sm:p-7"
-          onClick={(e) => e.stopPropagation()}
-        >
+      <div
+        className="animate-fade-up relative w-[90vw] max-w-md rounded-2xl bg-white p-6 shadow-lift overflow-y-auto sm:w-full sm:max-w-lg sm:p-7"
+        style={{ maxHeight: "90vh", WebkitOverflowScrolling: "touch" } as React.CSSProperties}
+        onClick={(e) => e.stopPropagation()}
+      >
           <button
             ref={closeRef}
             type="button"
@@ -150,8 +190,8 @@ export function EnquiryPopup() {
               onSuccess={() => window.setTimeout(dismiss, 2600)}
             />
           </div>
-        </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

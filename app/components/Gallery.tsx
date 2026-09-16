@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { openEnquiryPopup } from "@/lib/enquiryPopup";
 
 /**
  * Placeholder gallery images — swap these paths for real photos whenever
@@ -9,15 +10,15 @@ import Image from "next/image";
  * so nothing new to fetch; just edit this array.
  */
 const GALLERY_IMAGES = [
-  { src: "/images/hero/slide-1.png", alt: "SKS World School campus building" },
-  { src: "/images/gallery/hands-on-activity.png", alt: "Students in a hands-on learning activity" },
-  { src: "/images/hero/slide-2.png", alt: "Students at an outdoor morning assembly" },
-  { src: "/images/hero/slide-3.png", alt: "A smartboard lesson in progress" },
-  { src: "/images/beyond/robotics.webp", alt: "Students in the computer / robotics lab" },
-  { src: "/images/hero/slide-4.png", alt: "Art & craft activity in the classroom" },
-  { src: "/images/beyond/dramm-jamm.webp", alt: "Music class with keyboards" },
-  { src: "/images/beyond/self-defense.webp", alt: "Self-defense class in session" },
-  { src: "/images/hero/slide-5.png", alt: "Football on the school grounds" },
+  { src: "/images/hero/slide-1.png", alt: "SKS World School campus building", caption: "Our Campus" },
+  { src: "/images/gallery/hands-on-activity.png", alt: "Students in a hands-on learning activity", caption: "Interactive Learning" },
+  { src: "/images/hero/slide-2.png", alt: "Students at an outdoor morning assembly", caption: "Morning Assembly" },
+  { src: "/images/hero/slide-3.png", alt: "A smartboard lesson in progress", caption: "Smart Classrooms" },
+  { src: "/images/beyond/robotics.webp", alt: "Students in the computer / robotics lab", caption: "Computer Lab" },
+  { src: "/images/hero/slide-4.png", alt: "Art & craft activity in the classroom", caption: "Creative Activity Room" },
+  { src: "/images/beyond/dramm-jamm.webp", alt: "Music class with keyboards", caption: "Sports & Assembly" },
+  { src: "/images/beyond/self-defense.webp", alt: "Self-defense class in session", caption: "Student Events" },
+  { src: "/images/hero/slide-5.png", alt: "Football on the school grounds", caption: "Campus Views" },
 ];
 
 export function Gallery() {
@@ -77,23 +78,40 @@ export function Gallery() {
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {GALLERY_IMAGES.map((img, i) => (
-            <button
-              key={img.src}
-              type="button"
-              onClick={() => open(i)}
-              aria-label={`View larger image: ${img.alt}`}
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brick"
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover transition-transform duration-300 ease-out group-hover:scale-110"
-              />
-              <span className="absolute inset-0 bg-brick-700/0 transition-colors duration-300 group-hover:bg-brick-700/10" />
-            </button>
+            <figure key={img.src} className="m-0">
+              <button
+                type="button"
+                onClick={() => open(i)}
+                aria-label={`View larger image: ${img.alt}`}
+                className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brick"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 ease-out group-hover:scale-110"
+                />
+                <span className="absolute inset-0 bg-brick-700/0 transition-colors duration-300 group-hover:bg-brick-700/10" />
+              </button>
+              <figcaption className="mt-2.5 text-center text-sm font-medium text-ink/75">
+                {img.caption}
+              </figcaption>
+            </figure>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center sm:mt-12">
+          <a
+            href="#enquiry"
+            onClick={(e) => {
+              e.preventDefault();
+              openEnquiryPopup();
+            }}
+            className="btn-primary w-full px-8 py-3.5 text-base sm:w-auto"
+          >
+            Schedule a Campus Visit
+          </a>
         </div>
       </div>
 
@@ -166,7 +184,7 @@ export function Gallery() {
               />
             </div>
             <p className="mt-4 text-center text-sm text-white/80">
-              {active.alt}
+              {active.caption}
               <span className="text-white/50">
                 {" "}
                 — {activeIndex! + 1} / {GALLERY_IMAGES.length}
