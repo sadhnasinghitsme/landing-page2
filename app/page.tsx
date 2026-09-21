@@ -1,3 +1,4 @@
+import { AnnouncementBar } from "./components/AnnouncementBar";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Gallery } from "./components/Gallery";
@@ -46,6 +47,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <AnnouncementBar />
       <Header />
       <main className="pb-16 md:pb-0">
         <Hero />

@@ -16,8 +16,8 @@ const GALLERY_IMAGES = [
   { src: "/images/hero/slide-3.png", alt: "A smartboard lesson in progress", caption: "Smart Classrooms" },
   { src: "/images/beyond/robotics.webp", alt: "Students in the computer / robotics lab", caption: "Computer Lab" },
   { src: "/images/hero/slide-4.png", alt: "Art & craft activity in the classroom", caption: "Creative Activity Room" },
-  { src: "/images/beyond/dramm-jamm.webp", alt: "Music class with keyboards", caption: "Sports & Assembly" },
-  { src: "/images/beyond/self-defense.webp", alt: "Self-defense class in session", caption: "Student Events" },
+  { src: "/images/beyond/self-defense.webp", alt: "Self-defense class in session", caption: "Sports & Assembly" },
+  { src: "/images/why/activities.jpeg", alt: "Students and teacher posing after a stage performance", caption: "Student Events" },
   { src: "/images/hero/slide-5.png", alt: "Football on the school grounds", caption: "Campus Views" },
 ];
 
