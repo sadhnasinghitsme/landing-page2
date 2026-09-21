@@ -129,14 +129,15 @@ const FALLBACK = {
   },
   hero: {
     eyebrow: "Admissions Open",
-    headline: "Welcome to SKS World School, Noida",
-    headlineLines: ["Welcome to", "SKS World", "School, Noida"],
-    subhead: "Excellent International School in Noida Expressway (Sec-137)",
+    headline: "School Admission in Noida Sector 137: Playschool to Class 5",
+    headlineLines: ["School Admission", "in Noida Sector 137:", "Playschool to Class 5"],
+    subhead:
+      "Admissions Open 2026-27 at SKS World School, Noida Expressway. CBSE-affiliated, co-ed, English medium.",
     intro:
       "SKS World School, being one of the Best International School in Noida Expressway (Sec-137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi.",
   },
   welcome: {
-    heading: "Welcome to SKS World School, Noida",
+    heading: "Why Parents Choose SKS World School, Noida Sector 137",
     subheading: "Excellent International School in Noida Expressway (Sec-137)",
     paragraphs: [
       "SKS World School, being one of the Best International School in Noida Expressway (Sec-137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi.",
@@ -183,10 +184,10 @@ const FALLBACK = {
     { key: "robotics", title: "Robotics Lab in association with LEGO", image: "/images/why/robotics-lab.png" },
     { key: "smartboard", title: "Interactive Classrooms with Smart Boards", image: "/images/why/smart-classroom.png" },
     { key: "transport", title: "Safe & Secure Transport", image: "/images/why/transport-bus.png" },
-    { key: "sms", title: "SMS Updates for Parents", image: "/images/why/parent-sms.png" },
+    { key: "sms", title: "SMS Updates & Parent App", image: "/images/why/parent-sms.png" },
     { key: "documentary", title: "Movie / Documentary-based Education", image: "/images/why/auditorium.png" },
     { key: "award", title: "International School Award (British Council)", image: "/images/why/award-trophy.png" },
-    { key: "cbse", title: "Affiliated to CBSE, New Delhi", image: "/images/why/cbse-emblem.png" },
+    { key: "cbse", title: "CBSE Affiliated (No. 2134003)", image: "/images/why/cbse-emblem.png" },
     { key: "drama", title: "Dramm Jamm (Drama & JAM) Education", image: "/images/why/auditorium.png" },
   ],
   admissions: {
@@ -292,6 +293,7 @@ const FALLBACK = {
       "SKS World School",
       "Plot No. SS, Sector 137",
       "Noida, Uttar Pradesh 201305",
+      "Near Sector 137 Metro Station, Noida Expressway",
     ],
     officeHours: "Administration Office: 9:00 AM – 2:00 PM (working days)",
     mapsEmbed:
@@ -335,7 +337,7 @@ const FALLBACK = {
     ],
   },
   gradeOptions: [
-    "Pre-Nursery",
+    "Pre-Nursery / Playschool",
     "Nursery",
     "KG",
     "Class I",
@@ -360,7 +362,7 @@ const FALLBACK = {
     items: [
       { value: 15, suffix: "+", label: "Years shaping learners in Sector 137", displayValue: null },
       { value: 1200, suffix: "+", label: "Students on campus", displayValue: null },
-      { value: 20, suffix: "+", label: "Buses on safe, GPS-tracked routes", displayValue: null },
+      { value: 20, suffix: "+", label: "Buses on safe, customised pick-up routes", displayValue: null },
       { value: 95, suffix: "%", label: "CBSE Class X & XII pass record", displayValue: null },
     ],
   },
@@ -397,20 +399,8 @@ async function scrape() {
     );
     data.welcome.paragraphs[0] = data.hero.intro;
 
-    // Headline (from the homepage <h1>), split into the 3 stacked hero lines.
-    const h1 = clean($("h1").first().text());
-    data.hero.headline = /welcome to sks world school/i.test(h1)
-      ? h1
-      : data.hero.headline;
-    const w = data.hero.headline.split(/\s+/);
-    data.hero.headlineLines =
-      w.length >= 5
-        ? [
-            w.slice(0, 2).join(" "), // Welcome to
-            w.slice(2, 4).join(" "), // SKS World
-            w.slice(4).join(" "), // School, Noida
-          ]
-        : data.hero.headlineLines;
+    // Hero headline/subhead are landing-page copy from the update guide, so
+    // they intentionally are NOT overwritten from the live homepage <h1>.
     data.welcome.paragraphs[1] = pick(
       text,
       /(In addition to the pursuit of academic excellence SKS World School.*?(?:child\.|standards\.|Delhi\.))/i,

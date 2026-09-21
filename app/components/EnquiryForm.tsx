@@ -223,7 +223,7 @@ export function EnquiryForm({
         disabled={status === "submitting"}
         className="btn-primary mt-4 w-full text-base disabled:cursor-not-allowed disabled:opacity-60"
       >
-        {status === "submitting" ? "Sending…" : "Submit Enquiry"}
+        {status === "submitting" ? "Sending…" : "Get Fee Structure & Call Back"}
       </button>
 
       <p className="mt-3 text-center text-xs text-ink/50">

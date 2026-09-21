@@ -10,7 +10,7 @@ import { openEnquiryPopup } from "@/lib/enquiryPopup";
  * so nothing new to fetch; just edit this array.
  */
 const GALLERY_IMAGES = [
-  { src: "/images/hero/slide-1.png", alt: "SKS World School campus building", caption: "Our Campus" },
+  { src: "/images/hero/slide-1.png", alt: "SKS World School campus building, Sector 137 Noida", caption: "Our Campus" },
   { src: "/images/gallery/hands-on-activity.png", alt: "Students in a hands-on learning activity", caption: "Interactive Learning" },
   { src: "/images/hero/slide-2.png", alt: "Students at an outdoor morning assembly", caption: "Morning Assembly" },
   { src: "/images/hero/slide-3.png", alt: "A smartboard lesson in progress", caption: "Smart Classrooms" },
@@ -71,9 +71,11 @@ export function Gallery() {
     <section id="gallery" className="bg-sand">
       <div className="container-page pb-16 pt-16 sm:pb-20 lg:pt-36">
         <p className="eyebrow">Gallery</p>
-        <h2 className="mt-2 text-3xl text-brick sm:text-4xl">Life at SKS World School</h2>
+        <h2 className="mt-2 text-3xl text-brick sm:text-4xl">
+          Campus Life at SKS World School, Sector 137 Noida
+        </h2>
         <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink/70">
-          A glimpse of the campus, classrooms and everyday moments at SKS World School.
+          Activity time and everyday moments of joyful learning at our Noida Expressway campus.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

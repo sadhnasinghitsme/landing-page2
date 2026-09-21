@@ -95,7 +95,10 @@ export function Footer() {
 
       <div className="border-t border-ink/10">
         <div className="container-page flex flex-col gap-1 py-5 text-xs text-ink/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} {school.name}, Noida. All rights reserved.</p>
+          <p>
+            © {year} {school.name}, Sector 137, Noida. CBSE Affiliation No. {school.affiliationNo}.
+            All rights reserved. Managed by {school.trust}.
+          </p>
           <p>
             Content sourced from{" "}
             <a

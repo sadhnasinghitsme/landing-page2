@@ -16,9 +16,9 @@ const sans = Inter({
   display: "swap",
 });
 
-const { school } = content;
-const title = `${school.name}, Noida — Admissions ${content.hero.eyebrow}`.trim();
-const description = `Admissions at ${school.name}, ${school.location}. CBSE-affiliated (No. ${school.affiliationNo}) co-educational school opposite Sector 137 Metro Station, run by the ${school.trust}. Enquire online.`;
+const title = "Nursery Admission in Noida Sector 137 | CBSE School 2026-27";
+const description =
+  "SKS World School, Sector 137, Noida Expressway. CBSE co-ed school near Sector 137 Metro. Admissions open Pre-Nursery to Class 5, 2026-27. Enquire today.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sksworldschoolnoida.ac.in"),

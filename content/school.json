@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:39:59.959Z",
+  "generatedAt": "2026-09-21T11:29:57.203Z",
   "source": {
     "home": "https://sksworldschoolnoida.ac.in/",
     "about": "https://sksworldschoolnoida.ac.in/about-sksws-noida/",
@@ -22,17 +22,17 @@
   },
   "hero": {
     "eyebrow": "Admissions Open",
-    "headline": "Welcome To SKS World School, Noida",
+    "headline": "School Admission in Noida Sector 137: Playschool to Class 5",
     "headlineLines": [
-      "Welcome To",
-      "SKS World",
-      "School, Noida"
+      "School Admission",
+      "in Noida Sector 137:",
+      "Playschool to Class 5"
     ],
-    "subhead": "Excellent International School in Noida Expressway (Sec-137)",
+    "subhead": "Admissions Open 2026-27 at SKS World School, Noida Expressway. CBSE-affiliated, co-ed, English medium.",
     "intro": "SKS World School, being one of the Best International School in Noida Expressway (Sec- 137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi."
   },
   "welcome": {
-    "heading": "Welcome to SKS World School, Noida",
+    "heading": "Why Parents Choose SKS World School, Noida Sector 137",
     "subheading": "Excellent International School in Noida Expressway (Sec-137)",
     "paragraphs": [
       "SKS World School, being one of the Best International School in Noida Expressway (Sec- 137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi.",
@@ -109,7 +109,7 @@
     },
     {
       "key": "sms",
-      "title": "SMS Updates for Parents",
+      "title": "SMS Updates & Parent App",
       "image": "/images/why/parent-sms.png"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "key": "cbse",
-      "title": "Affiliated to CBSE, New Delhi",
+      "title": "CBSE Affiliated (No. 2134003)",
       "image": "/images/why/cbse-emblem.png"
     },
     {
@@ -240,7 +240,8 @@
     "addressLines": [
       "SKS World School",
       "Plot No. SS, Sector 137",
-      "Noida, Uttar Pradesh 201305"
+      "Noida, Uttar Pradesh 201305",
+      "Near Sector 137 Metro Station, Noida Expressway"
     ],
     "officeHours": "Administration Office: 9:00 AM – 2:00 PM (working days)",
     "mapsEmbed": "https://maps.google.com/maps?q=SKS%20World%20School%2C%20Sector%20137%20Noida%20Plot%20No%20ss%2C%20Sector%20137%2C%20Noida%2C%20Uttar%20Pradesh%20201305&t=m&z=15&output=embed&iwloc=near",
@@ -275,7 +276,7 @@
     ]
   },
   "gradeOptions": [
-    "Pre-Nursery",
+    "Pre-Nursery / Playschool",
     "Nursery",
     "KG",
     "Class I",
@@ -310,7 +311,7 @@
       {
         "value": 20,
         "suffix": "+",
-        "label": "Buses on safe, GPS-tracked routes",
+        "label": "Buses on safe, customised pick-up routes",
         "displayValue": null
       },
       {
