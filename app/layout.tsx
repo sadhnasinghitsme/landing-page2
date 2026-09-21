@@ -16,9 +16,9 @@ const sans = Inter({
   display: "swap",
 });
 
-const title = "Nursery Admission in Noida Sector 137 | CBSE School 2026-27";
+const title = "Class 6-12 Admission in Noida Sector 137 | CBSE School";
 const description =
-  "SKS World School, Sector 137, Noida Expressway. CBSE co-ed school near Sector 137 Metro. Admissions open Pre-Nursery to Class 5, 2026-27. Enquire today.";
+  "SKS World School, Sector 137, Noida Expressway. CBSE co-ed school near Sector 137 Metro. Class 6 to 12 admissions open. Book a campus visit.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sksworldschoolnoida.ac.in"),

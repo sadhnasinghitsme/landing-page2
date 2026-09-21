@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T11:29:57.203Z",
+  "generatedAt": "2026-09-21T11:48:01.084Z",
   "source": {
     "home": "https://sksworldschoolnoida.ac.in/",
     "about": "https://sksworldschoolnoida.ac.in/about-sksws-noida/",
@@ -18,30 +18,30 @@
     "board": "CBSE",
     "affiliationNo": "2134003",
     "type": "English-medium co-educational school",
-    "tagline": "Top Ranking International School in Noida Expressway — Sector 137, Noida"
+    "tagline": "CBSE School in Noida Expressway — Sector 137, Noida"
   },
   "hero": {
     "eyebrow": "Admissions Open",
-    "headline": "School Admission in Noida Sector 137: Playschool to Class 5",
+    "headline": "CBSE School in Noida Sector 137: Class 6 to 12 Admission",
     "headlineLines": [
-      "School Admission",
-      "in Noida Sector 137:",
-      "Playschool to Class 5"
+      "CBSE School in",
+      "Noida Sector 137:",
+      "Class 6 to 12 Admission"
     ],
-    "subhead": "Admissions Open 2026-27 at SKS World School, Noida Expressway. CBSE-affiliated, co-ed, English medium.",
-    "intro": "SKS World School, being one of the Best International School in Noida Expressway (Sec- 137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi."
+    "subhead": "Admissions open for Class 6 to 12 at SKS World School, Noida Expressway. CBSE-affiliated, co-ed, English medium.",
+    "intro": "SKS World School is an English-medium, co-educational, CBSE-affiliated school on the Noida Expressway (Sector 137), run by the SKS Educational & Social Trust under Chairman Shri S.K. Sharma."
   },
   "welcome": {
     "heading": "Why Parents Choose SKS World School, Noida Sector 137",
-    "subheading": "Excellent International School in Noida Expressway (Sec-137)",
+    "subheading": "CBSE School in Noida Expressway (Sec-137)",
     "paragraphs": [
-      "SKS World School, being one of the Best International School in Noida Expressway (Sec- 137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi.",
-      "In addition to the pursuit of academic excellence SKS World School always strives to provide a holistic and meaningful education with a focus on providing education beyond books, nurturing talents and imbibing good values, the curriculum is enriched by all round extracurricular activities to bring forth the inherent potentials of each and every child, proving it one of the Top Ranking air conditioned school in Noida Sector 137 near Noida Expressway, South Delhi and East Delhi."
+      "SKS World School is an English-medium, co-educational, CBSE-affiliated school on the Noida Expressway (Sector 137), run by the SKS Educational & Social Trust under Chairman Shri S.K. Sharma.",
+      "In addition to academics, SKS World School focuses on holistic education beyond books, with a wide range of extracurricular activities that help each child build talent and good values."
     ]
   },
   "about": {
     "coreMotive": "The core motive behind the efforts made by the schools run under the SKS Group of Institutions has always been to provide a holistic and meaningful education in addition to the pursuit of academic excellence.",
-    "locationCopy": "The location of SKS World School, Sec-137 is prominent and just opposite of the Metro Station of Sector-137, Noida. The school is one of the Best International School in Noida Expressway, South Delhi, east Delhi – premier schools in Noida with a state of art infrastructure along with exclusive sports facilities and all other world class academic amenities according to international standards.",
+    "locationCopy": "SKS World School is just opposite Sector 137 Metro Station on the Noida Expressway, so senior students can reach school by metro or school bus.",
     "proximity": [
       {
         "distance": "0 km",
@@ -118,9 +118,9 @@
       "image": "/images/why/auditorium.png"
     },
     {
-      "key": "award",
-      "title": "International School Award (British Council)",
-      "image": "/images/why/award-trophy.png"
+      "key": "labs",
+      "title": "Science, Maths & Computer Labs",
+      "image": "/images/beyond/robotics.webp"
     },
     {
       "key": "cbse",
@@ -129,30 +129,30 @@
     },
     {
       "key": "drama",
-      "title": "Dramm Jamm (Drama & JAM) Education",
+      "title": "Dramm Jamm Dance Education",
       "image": "/images/why/auditorium.png"
     }
   ],
   "admissions": {
-    "heading": "Admission Process",
-    "intro": "The admission procedure at SKS World School, Noida is friendly and transparent.",
+    "heading": "Class 6 to 12 Admission Process, SKS World School Noida",
+    "intro": "A simple four-step process. The admission procedure is friendly and transparent.",
     "ageCriterion": "The applicant should have attained the required age on or before 31st March of the calendar year in which the admission is sought.",
     "steps": [
       {
         "title": "Registration",
-        "body": "Registration is the first step for seeking admission in SKS World School, Noida. Registration forms are available at the Administration Office on all working days from 9:00 AM to 2:00 PM. Incomplete registration forms will not be processed."
+        "body": "Register online or collect the form at the Administration Office, open 9:00 AM to 2:00 PM on working days. Submit all required documents so your form can be processed."
       },
       {
         "title": "Interaction",
-        "body": "Date and timings for interaction will be intimated telephonically and will be displayed on the school website. Parents are advised not to fill more than one form for an applicant."
+        "body": "We will phone you with the date and time of the interaction and also post it on the school website. Please submit one form per applicant."
       },
       {
         "title": "Selection",
-        "body": "The management of the School reserves all rights of admission or rejection and is not bound to give any reasons for admission or rejection of any particular candidate."
+        "body": "The school confirms admission after the interaction."
       },
       {
         "title": "Fee Deposit",
-        "body": "On confirmation of grant of admission, parents will be required to deposit the fee within stipulated time. Failing which the offer of admission shall stand cancelled and the seat will be offered to another applicant."
+        "body": "Once admission is confirmed, deposit the fee within the stipulated time to secure the seat. After that date the seat is offered to another applicant."
       }
     ],
     "rejectionPolicy": "Incomplete registration forms and forms providing incorrect information will automatically stand rejected.",
@@ -189,13 +189,13 @@
     ]
   },
   "programmes": {
-    "heading": "Our Programmes",
-    "subheading": "The curriculum is designed to make learning more motivating, enthralling and stimulating.",
+    "heading": "Class 6 to 12 CBSE Programmes at SKS World School, Noida",
+    "subheading": "A CBSE curriculum that builds strong academics, co-curricular skills and sportsmanship.",
     "items": [
       {
         "title": "Academics",
         "image": "/images/programmes/academics.png",
-        "body": "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice."
+        "body": "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice. CBSE curriculum from Class 6 to 12."
       },
       {
         "title": "Co-curricular",
@@ -218,11 +218,11 @@
         "image": "/images/beyond/robotics.webp"
       },
       {
-        "title": "Dramm Jamm — Drama, Vocal & Instrumental Music",
+        "title": "Music Room — western and classical music, vocal training",
         "image": "/images/beyond/dramm-jamm.webp"
       },
       {
-        "title": "Self-Defense Classes",
+        "title": "Self-Defence Classes",
         "image": "/images/beyond/self-defense.webp"
       },
       {
@@ -240,8 +240,7 @@
     "addressLines": [
       "SKS World School",
       "Plot No. SS, Sector 137",
-      "Noida, Uttar Pradesh 201305",
-      "Near Sector 137 Metro Station, Noida Expressway"
+      "Noida, Uttar Pradesh 201305"
     ],
     "officeHours": "Administration Office: 9:00 AM – 2:00 PM (working days)",
     "mapsEmbed": "https://maps.google.com/maps?q=SKS%20World%20School%2C%20Sector%20137%20Noida%20Plot%20No%20ss%2C%20Sector%20137%2C%20Noida%2C%20Uttar%20Pradesh%20201305&t=m&z=15&output=embed&iwloc=near",
@@ -276,31 +275,23 @@
     ]
   },
   "gradeOptions": [
-    "Pre-Nursery / Playschool",
-    "Nursery",
-    "KG",
-    "Class I",
-    "Class II",
-    "Class III",
-    "Class IV",
-    "Class V",
-    "Class VI",
-    "Class VII",
-    "Class VIII",
-    "Class IX",
-    "Class X",
-    "Class XI",
-    "Class XII"
+    "Class 6",
+    "Class 7",
+    "Class 8",
+    "Class 9",
+    "Class 10",
+    "Class 11",
+    "Class 12"
   ],
   "stats": {
     "editable": true,
     "note": "DEMO figures — not published on sksworldschoolnoida.ac.in and not yet confirmed by the school. Keep `editable: true` (shows the 'confirm with school' badge) until every number here is verified.",
     "items": [
       {
-        "value": 15,
-        "suffix": "+",
-        "label": "Years shaping learners in Sector 137",
-        "displayValue": null
+        "value": 25,
+        "suffix": "",
+        "label": "Student-teacher ratio",
+        "displayValue": "1:25"
       },
       {
         "value": 1200,
@@ -311,7 +302,7 @@
       {
         "value": 20,
         "suffix": "+",
-        "label": "Buses on safe, customised pick-up routes",
+        "label": "School buses on customised, mobile-connected routes",
         "displayValue": null
       },
       {
@@ -336,8 +327,8 @@
       "value": "SKS Educational & Social Trust"
     },
     {
-      "label": "Recognition",
-      "value": "International School Award — British Council"
+      "label": "Classes",
+      "value": "Class 6 to 12"
     }
   ],
   "_keyFactorsMatched": 8,

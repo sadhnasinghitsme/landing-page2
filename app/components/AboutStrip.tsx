@@ -22,7 +22,7 @@ export function AboutStrip() {
           <div>
             <p className="eyebrow">About the school</p>
             <h2 className="mt-2 font-display text-2xl text-brick sm:text-3xl">
-              About SKS World School
+              About SKS World School, Noida Sector 137 (CBSE, Class 6 to 12)
             </h2>
             <p className="mt-3 text-[15px] leading-relaxed text-ink/75 sm:text-base">
               {welcome.paragraphs[0]}
@@ -61,7 +61,7 @@ export function AboutStrip() {
         {/* 2 — Prime Location */}
         <div className="mt-14 border-t border-ink/10 pt-10">
           <h3 className="font-display text-xl text-brick sm:text-2xl">
-            Prime Location
+            Location: Opposite Sector 137 Metro Station, Noida Expressway
           </h3>
           <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-ink/75">
             {about.locationCopy}

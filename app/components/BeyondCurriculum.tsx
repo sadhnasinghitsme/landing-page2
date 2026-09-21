@@ -32,10 +32,6 @@ export function BeyondCurriculum() {
             </li>
           ))}
         </ul>
-
-        <p className="mt-6 text-xs text-ink/45">
-          Activities from the school&rsquo;s Key Factors and Infrastructure pages.
-        </p>
       </div>
     </section>
   );

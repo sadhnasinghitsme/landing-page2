@@ -34,10 +34,6 @@ export function Programmes() {
             </article>
           ))}
         </div>
-
-        <p className="mt-6 text-xs text-ink/45">
-          Programme areas and descriptions from the school&rsquo;s Curriculum page.
-        </p>
       </div>
     </section>
   );

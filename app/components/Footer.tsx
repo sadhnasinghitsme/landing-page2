@@ -27,7 +27,7 @@ export function Footer() {
           <p className="mt-4 text-sm leading-relaxed text-ink/65">
             {school.type} run under the aegis of the {school.trust}, led by its
             Chairman {school.chairman}. Affiliated to {school.board}, New Delhi —
-            Affiliation No. {school.affiliationNo}.
+            Affiliation No. {school.affiliationNo}. Class 6 to 12 admissions at Sector 137, Noida.
           </p>
         </div>
 
@@ -97,18 +97,7 @@ export function Footer() {
         <div className="container-page flex flex-col gap-1 py-5 text-xs text-ink/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {school.name}, Sector 137, Noida. CBSE Affiliation No. {school.affiliationNo}.
-            All rights reserved. Managed by {school.trust}.
-          </p>
-          <p>
-            Content sourced from{" "}
-            <a
-              href="https://sksworldschoolnoida.ac.in/"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              sksworldschoolnoida.ac.in
-            </a>
+            All rights reserved.
           </p>
         </div>
       </div>

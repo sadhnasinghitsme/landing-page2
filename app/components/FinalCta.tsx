@@ -12,10 +12,11 @@ export function FinalCta() {
             {hero.eyebrow}
           </p>
           <h2 className="mt-2 text-3xl text-white sm:text-4xl">
-            Admissions Open 2026-27: Pre-Nursery to Class 5
+            Ready to Apply for Class 6-12?
           </h2>
           <p className="mt-4 text-[15px] leading-relaxed text-white/80">
-            Call or enquire today to book a campus visit at Sector 137, Noida.
+            Send an enquiry and our admissions team will guide you through
+            registration, the interaction schedule and fee timelines for Class 6 to 12.
           </p>
 
           <div className="mt-8 space-y-3 text-sm">

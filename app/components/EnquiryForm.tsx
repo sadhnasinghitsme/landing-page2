@@ -98,10 +98,12 @@ export function EnquiryForm({
     >
       {!compact && (
         <div className="mb-4">
-          <p className="eyebrow">Admission Enquiry</p>
-          <h2 className="mt-1 text-xl text-brick sm:text-2xl">Provide Your Details</h2>
+          <p className="eyebrow">Class 6-12 Admission Enquiry</p>
+          <h2 className="mt-1 text-xl text-brick sm:text-2xl">Get Fee Structure &amp; Callback</h2>
+          {/* TODO-CONFIRM: append "We will call you within [2 working hours]." once the
+              admissions team confirms the callback time it can meet. */}
           <p className="mt-1 text-sm text-ink/60">
-            The admissions team will call you back.
+            Get the fee structure, seat availability and a campus visit slot.
           </p>
         </div>
       )}
@@ -109,7 +111,7 @@ export function EnquiryForm({
       <div className="grid gap-3 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <label htmlFor="name" className="field-label">
-            Student / Parent name<span className="text-flame-600"> *</span>
+            Parent&apos;s name<span className="text-flame-600"> *</span>
           </label>
           <input
             id="name"

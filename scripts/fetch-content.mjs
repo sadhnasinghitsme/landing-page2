@@ -124,31 +124,35 @@ const FALLBACK = {
     board: "CBSE",
     affiliationNo: "2134003",
     type: "English-medium co-educational school",
-    tagline:
-      "Top Ranking International School in Noida Expressway — Sector 137, Noida",
+    tagline: "CBSE School in Noida Expressway — Sector 137, Noida",
   },
   hero: {
     eyebrow: "Admissions Open",
-    headline: "School Admission in Noida Sector 137: Playschool to Class 5",
-    headlineLines: ["School Admission", "in Noida Sector 137:", "Playschool to Class 5"],
+    headline: "CBSE School in Noida Sector 137: Class 6 to 12 Admission",
+    headlineLines: ["CBSE School in", "Noida Sector 137:", "Class 6 to 12 Admission"],
     subhead:
-      "Admissions Open 2026-27 at SKS World School, Noida Expressway. CBSE-affiliated, co-ed, English medium.",
+      "Admissions open for Class 6 to 12 at SKS World School, Noida Expressway. CBSE-affiliated, co-ed, English medium.",
+    // TODO-CONFIRM: add one sentence on senior classes (streams, labs and board-exam
+    // preparation) once the school confirms what it offers.
     intro:
-      "SKS World School, being one of the Best International School in Noida Expressway (Sec-137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi.",
+      "SKS World School is an English-medium, co-educational, CBSE-affiliated school on the Noida Expressway (Sector 137), run by the SKS Educational & Social Trust under Chairman Shri S.K. Sharma.",
   },
   welcome: {
     heading: "Why Parents Choose SKS World School, Noida Sector 137",
-    subheading: "Excellent International School in Noida Expressway (Sec-137)",
+    subheading: "CBSE School in Noida Expressway (Sec-137)",
     paragraphs: [
-      "SKS World School, being one of the Best International School in Noida Expressway (Sec-137), is an English medium co-educational institution that runs under the aegis of the SKS Educational & Social Trust, led by its dynamic and visionary Chairman Shri S.K Sharma. The School follows CBSE based curriculum and is widely regarded as one of the best school in Noida Expressway, South Delhi and East Delhi.",
-      "In addition to the pursuit of academic excellence SKS World School always strives to provide a holistic and meaningful education with a focus on providing education beyond books, nurturing talents and imbibing good values. The curriculum is enriched by all round extracurricular activities to bring forth the inherent potentials of each and every child.",
+      "SKS World School is an English-medium, co-educational, CBSE-affiliated school on the Noida Expressway (Sector 137), run by the SKS Educational & Social Trust under Chairman Shri S.K. Sharma.",
+      "In addition to academics, SKS World School focuses on holistic education beyond books, with a wide range of extracurricular activities that help each child build talent and good values.",
     ],
   },
   about: {
     coreMotive:
       "The core motive behind the efforts made by the schools run under the SKS Group of Institutions has always been to provide a holistic and meaningful education in addition to the pursuit of academic excellence.",
+    // TODO-CONFIRM: add the bus areas covered.
     locationCopy:
-      "The location of SKS World School, Sec-137 is prominent and just opposite of the Metro Station of Sector-137, Noida. The school is one of the Best International School in Noida Expressway, South Delhi, East Delhi — a premier school in Noida with state-of-the-art infrastructure along with exclusive sports facilities and other world-class academic amenities according to international standards.",
+      "SKS World School is just opposite Sector 137 Metro Station on the Noida Expressway, so senior students can reach school by metro or school bus.",
+    // TODO-CONFIRM: verify each distance in Google Maps and keep only areas the school
+    // buses actually serve (the 14 km Pari Chowk figure looks short).
     proximity: [
       { distance: "0 km", place: "Metro Station, Noida Sector 137" },
       { distance: "3 km", place: "Sector 93 / 82 / 108" },
@@ -163,7 +167,7 @@ const FALLBACK = {
   philosophy: {
     heading: "Our Philosophy",
     statement:
-      "Understanding the significance of values and learning, we endeavour to encourage holistic development in children. Academic excellence takes the front seat for the foundation of learning. To unleash the unique caliber in every child, we strive towards enriching students with value-based education and individual care so that they can grow up as leaders.",
+      "Understanding the significance of values and learning, we endeavour to encourage holistic development in children. To unleash the unique caliber in every child, we strive towards enriching students with value-based education and individual care so that they can grow up as leaders.",
     values: [
       {
         name: "Harmony and Respect",
@@ -181,41 +185,44 @@ const FALLBACK = {
   },
   // `key` maps to a Lucide icon in app/components/WhySks.tsx.
   keyFactors: [
+    // TODO-CONFIRM: add "STEM and robotics from Class [x]" once the school confirms it.
     { key: "robotics", title: "Robotics Lab in association with LEGO", image: "/images/why/robotics-lab.png" },
     { key: "smartboard", title: "Interactive Classrooms with Smart Boards", image: "/images/why/smart-classroom.png" },
     { key: "transport", title: "Safe & Secure Transport", image: "/images/why/transport-bus.png" },
     { key: "sms", title: "SMS Updates & Parent App", image: "/images/why/parent-sms.png" },
     { key: "documentary", title: "Movie / Documentary-based Education", image: "/images/why/auditorium.png" },
-    { key: "award", title: "International School Award (British Council)", image: "/images/why/award-trophy.png" },
+    // Replaces the British Council award card (may be expired for this campus).
+    // TODO-CONFIRM: add the Board-Exam Preparation card once the school confirms what it
+    // offers (extra classes, mock tests, counselling).
+    { key: "labs", title: "Science, Maths & Computer Labs", image: "/images/beyond/robotics.webp" },
     { key: "cbse", title: "CBSE Affiliated (No. 2134003)", image: "/images/why/cbse-emblem.png" },
-    { key: "drama", title: "Dramm Jamm (Drama & JAM) Education", image: "/images/why/auditorium.png" },
+    { key: "drama", title: "Dramm Jamm Dance Education", image: "/images/why/auditorium.png" },
   ],
   admissions: {
-    heading: "Admission Process",
-    intro:
-      "The admission procedure at SKS World School, Noida is friendly and transparent.",
+    heading: "Class 6 to 12 Admission Process, SKS World School Noida",
+    intro: "A simple four-step process. The admission procedure is friendly and transparent.",
     ageCriterion:
       "The applicant should have attained the required age on or before 31st March of the calendar year in which the admission is sought.",
     steps: [
       {
         title: "Registration",
         body:
-          "Registration is the first step for seeking admission in SKS World School, Noida. Registration forms are available at the Administration Office on all working days from 9:00 AM to 2:00 PM. Incomplete registration forms will not be processed.",
+          "Register online or collect the form at the Administration Office, open 9:00 AM to 2:00 PM on working days. Submit all required documents so your form can be processed.",
       },
       {
         title: "Interaction",
         body:
-          "Date and timings for interaction will be intimated telephonically and will be displayed on the school website. Parents are advised not to fill more than one form for an applicant.",
+          "We will phone you with the date and time of the interaction and also post it on the school website. Please submit one form per applicant.",
       },
       {
         title: "Selection",
-        body:
-          "The management of the School reserves all rights of admission or rejection and is not bound to give any reasons for admission or rejection of any particular candidate.",
+        // TODO-CONFIRM: add any assessment for Class 9 or Class 11 entry.
+        body: "The school confirms admission after the interaction.",
       },
       {
         title: "Fee Deposit",
         body:
-          "On confirmation of grant of admission, parents will be required to deposit the fee within the stipulated time. Failing which the offer of admission shall stand cancelled and the seat will be offered to another applicant.",
+          "Once admission is confirmed, deposit the fee within the stipulated time to secure the seat. After that date the seat is offered to another applicant.",
       },
     ],
     rejectionPolicy:
@@ -223,6 +230,8 @@ const FALLBACK = {
     antiDonation:
       "The school does not accept any donation for admission. Parents should be aware of third parties collecting money on behalf of the School and making false claims of procuring admission. If the parents enter into any transaction with such parties, they will be doing so at their own risk and the school shall not be responsible for it.",
   },
+  // TODO-CONFIRM: replace with real, consented reviews from Class 6-12 parents (first name,
+  // child's class, date). The quotes below are the live-site ones and contain superlatives.
   testimonials: [
     {
       quote:
@@ -250,15 +259,16 @@ const FALLBACK = {
   // "Our Programmes" — SKS's own curriculum domains (/curriculum/), not
   // grade-stage labels (the curriculum page is organised by domain, not stage).
   programmes: {
-    heading: "Our Programmes",
+    heading: "Class 6 to 12 CBSE Programmes at SKS World School, Noida",
     subheading:
-      "The curriculum is designed to make learning more motivating, enthralling and stimulating.",
+      "A CBSE curriculum that builds strong academics, co-curricular skills and sportsmanship.",
     items: [
       {
         title: "Academics",
         image: "/images/programmes/academics.png",
         body:
-          "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice.",
+          // TODO-CONFIRM: extend the added sentence with the subjects and streams offered.
+          "The Academic Programme is tailored to evolve the intellectual stimulation and curiosity, rational thought and maturity of mind of the student, who is encouraged to pursue the subjects of their choice. CBSE curriculum from Class 6 to 12.",
       },
       {
         title: "Co-curricular",
@@ -281,8 +291,10 @@ const FALLBACK = {
     eyebrow: "Beyond the classroom",
     items: [
       { title: "Robotics Lab — in association with LEGO", image: "/images/beyond/robotics.webp" },
-      { title: "Dramm Jamm — Drama, Vocal & Instrumental Music", image: "/images/beyond/dramm-jamm.webp" },
-      { title: "Self-Defense Classes", image: "/images/beyond/self-defense.webp" },
+      // The keyboard photo shows the music room, so this card carries the guide's Music Room
+      // text. TODO: a Dramm Jamm "Dance Education" card needs a dance photo and a fifth slot.
+      { title: "Music Room — western and classical music, vocal training", image: "/images/beyond/dramm-jamm.webp" },
+      { title: "Self-Defence Classes", image: "/images/beyond/self-defense.webp" },
       { title: "Yoga Room & Classes", image: "/images/beyond/yoga.webp" },
     ],
   },
@@ -293,7 +305,6 @@ const FALLBACK = {
       "SKS World School",
       "Plot No. SS, Sector 137",
       "Noida, Uttar Pradesh 201305",
-      "Near Sector 137 Metro Station, Noida Expressway",
     ],
     officeHours: "Administration Office: 9:00 AM – 2:00 PM (working days)",
     mapsEmbed:
@@ -337,21 +348,14 @@ const FALLBACK = {
     ],
   },
   gradeOptions: [
-    "Pre-Nursery / Playschool",
-    "Nursery",
-    "KG",
-    "Class I",
-    "Class II",
-    "Class III",
-    "Class IV",
-    "Class V",
-    "Class VI",
-    "Class VII",
-    "Class VIII",
-    "Class IX",
-    "Class X",
-    "Class XI",
-    "Class XII",
+    // TODO-CONFIRM: show only the classes the school is admitting into this session.
+    "Class 6",
+    "Class 7",
+    "Class 8",
+    "Class 9",
+    "Class 10",
+    "Class 11",
+    "Class 12",
   ],
   // ---- DEMO FIGURES: not published on the live site, not yet verified. --------
   // The "confirm with school" badge stays visible until these are replaced with
@@ -360,9 +364,14 @@ const FALLBACK = {
     editable: true,
     note: "DEMO figures — not published on sksworldschoolnoida.ac.in and not yet confirmed by the school. Keep `editable: true` (shows the 'confirm with school' badge) until every number here is verified.",
     items: [
-      { value: 15, suffix: "+", label: "Years shaping learners in Sector 137", displayValue: null },
+      // TODO-CONFIRM (school): ratio for senior classes.
+      { value: 25, suffix: "", label: "Student-teacher ratio", displayValue: "1:25" },
+      // TODO-CONFIRM (school): current student count.
       { value: 1200, suffix: "+", label: "Students on campus", displayValue: null },
-      { value: 20, suffix: "+", label: "Buses on safe, customised pick-up routes", displayValue: null },
+      // TODO-CONFIRM (school): number of buses; keep "GPS" out unless confirmed.
+      { value: 20, suffix: "+", label: "School buses on customised, mobile-connected routes", displayValue: null },
+      // TODO-CONFIRM (school): replace with year-tagged Class X and XII results
+      // (year, pass %, students above 90%) or remove if they cannot be backed.
       { value: 95, suffix: "%", label: "CBSE Class X & XII pass record", displayValue: null },
     ],
   },
@@ -370,7 +379,7 @@ const FALLBACK = {
     { label: "Board", value: "CBSE — Affiliation No. 2134003" },
     { label: "Location", value: "Opposite Sector 137 Metro Station" },
     { label: "Managed by", value: "SKS Educational & Social Trust" },
-    { label: "Recognition", value: "International School Award — British Council" },
+    { label: "Classes", value: "Class 6 to 12" },
   ],
 };
 
@@ -392,20 +401,12 @@ async function scrape() {
       /AFFILIATION\s*NO\.?\s*:?\s*(\d{6,})/i,
       data.school.affiliationNo,
     );
-    data.hero.intro = pick(
-      text,
-      /(SKS World School\s*,?\s*being one of the Best International School.*?East Delhi\.)/i,
-      data.hero.intro,
-    );
+    // Landing-page copy (senior-wing guide) replaces the live homepage
+    // paragraphs, which carry unsupported "best"/"international" claims.
     data.welcome.paragraphs[0] = data.hero.intro;
 
     // Hero headline/subhead are landing-page copy from the update guide, so
     // they intentionally are NOT overwritten from the live homepage <h1>.
-    data.welcome.paragraphs[1] = pick(
-      text,
-      /(In addition to the pursuit of academic excellence SKS World School.*?(?:child\.|standards\.|Delhi\.))/i,
-      data.welcome.paragraphs[1],
-    );
 
     // Key Factors — carousel alt text, keep our curated titles + local icons
     const alts = $("img[alt]")
@@ -482,11 +483,6 @@ async function scrape() {
       /(The core motive behind the efforts made by the schools run under the SKS Group of Institutions.*?academic excellence\.)/i,
       data.about.coreMotive,
     );
-    data.about.locationCopy = pick(
-      text,
-      /(The location of SKS World School\s*,?\s*Sec-?137 is prominent.*?(?:standards\.|amenities\.))/i,
-      data.about.locationCopy,
-    );
     const proxRegion =
       (text.match(/proximity of:?\s*(.*?)(?:SKS World School|$)/i) || [, text])[1];
     const prox = [];
@@ -514,20 +510,10 @@ async function scrape() {
       /(The school does not accept any donation for admission\..*?responsible for it\.)/i,
       data.admissions.antiDonation,
     );
-    data.admissions.steps[2].body = pick(
-      text,
-      /(The management of the School reserves all rights of admission or rejection.*?particular candidate\.)/i,
-      data.admissions.steps[2].body,
-    );
     data.admissions.rejectionPolicy = pick(
       text,
       /(Incomplete registration forms and forms providing incorrect information will automatically stand rejected\.)/i,
       data.admissions.rejectionPolicy,
-    );
-    data.admissions.steps[3].body = pick(
-      text,
-      /(On confirmation of grant of admission, parents will be required to deposit the fee.*?another applicant\.)/i,
-      data.admissions.steps[3].body,
     );
   } catch (err) {
     warn("admissions", err);

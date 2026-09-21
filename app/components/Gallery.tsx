@@ -14,9 +14,9 @@ const GALLERY_IMAGES = [
   { src: "/images/gallery/hands-on-activity.png", alt: "Students in a hands-on learning activity", caption: "Interactive Learning" },
   { src: "/images/hero/slide-2.png", alt: "Students at an outdoor morning assembly", caption: "Morning Assembly" },
   { src: "/images/hero/slide-3.png", alt: "A smartboard lesson in progress", caption: "Smart Classrooms" },
-  { src: "/images/beyond/robotics.webp", alt: "Students in the computer / robotics lab", caption: "Computer Lab" },
+  { src: "/images/beyond/robotics.webp", alt: "Computer lab at SKS World School, Sector 137 Noida", caption: "Computer Lab" },
   { src: "/images/hero/slide-4.png", alt: "Art & craft activity in the classroom", caption: "Creative Activity Room" },
-  { src: "/images/beyond/self-defense.webp", alt: "Self-defense class in session", caption: "Sports & Assembly" },
+  { src: "/images/beyond/self-defense.webp", alt: "Self-defence class in session at SKS World School, Sector 137 Noida", caption: "Self-Defence Classes" },
   { src: "/images/why/activities.jpeg", alt: "Students and teacher posing after a stage performance", caption: "Student Events" },
   { src: "/images/hero/slide-5.png", alt: "Football on the school grounds", caption: "Campus Views" },
 ];
@@ -75,7 +75,7 @@ export function Gallery() {
           Campus Life at SKS World School, Sector 137 Noida
         </h2>
         <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink/70">
-          Activity time and everyday moments of joyful learning at our Noida Expressway campus.
+          A glimpse of the campus, classrooms, labs and everyday moments at our Noida Expressway school.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

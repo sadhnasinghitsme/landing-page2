@@ -50,10 +50,6 @@ export function WhySks() {
           </li>
         ))}
       </ul>
-
-      <p className="mt-6 text-xs text-ink/45">
-        Key Factors as listed on the school&rsquo;s homepage.
-      </p>
     </section>
   );
 }

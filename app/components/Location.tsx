@@ -10,7 +10,7 @@ export function Location() {
         <div>
           <p className="eyebrow">Visit us</p>
           <h2 className="mt-2 text-3xl text-brick sm:text-4xl">
-            Right opposite Sector 137 Metro
+            Right Opposite Sector 137 Metro Station
           </h2>
 
           <address className="mt-5 space-y-1 text-[15px] not-italic leading-relaxed text-ink/75">
@@ -49,10 +49,6 @@ export function Location() {
           >
             Open in Google Maps
           </a>
-
-          <p className="mt-4 text-xs text-ink/45">
-            Full connectivity list is in the About section above.
-          </p>
         </div>
 
         <div className="space-y-4">
